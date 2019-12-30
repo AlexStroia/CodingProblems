@@ -6,36 +6,9 @@ public class Main {
 
     public static void main(String[] args) {
         int[] input = {3, 5, -4, 8, 11, 1, -1, 6};
-        int[] input2 = {12, 3, 1, 2, -6, 5, -8, 6};
         int target = 10;
-        int target2 = 0;
 
-        List<Integer[]> nums = threeNumberSum(input, target);
-
-
-        for (Integer[] num : nums) {
-            System.out.println("Yo");
-            for (int i = 0; i < num.length; i++) {
-                System.out.println(num[i]);
-            }
-
-        }
-    }
-
-
-    private static int[] TwoNumberSum(int[] input, int target) {
-        Map<Integer, Boolean> storedNums = new HashMap<>();
-
-        for (int i = 0; i < input.length; i++) {
-            int potentialMatch = target - input[i];
-
-            if (storedNums.containsKey(potentialMatch)) {
-                return new int[]{potentialMatch, input[i]};
-            } else {
-                storedNums.put(input[i], true);
-            }
-        }
-        return new int[]{0};
+        threeNumberSum(input,target);
     }
 
     //O(n^3)
@@ -90,7 +63,6 @@ public class Main {
                     start++;
                     end--;
                 }
-
             }
         }
         return nums;
