@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/TwoNumberSum.iml" filepath="$PROJECT_DIR$/TwoNumberSum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThreeNumberSum.iml" filepath="$PROJECT_DIR$/ThreeNumberSum.iml" />
     </modules>
   </component>
 </project>
