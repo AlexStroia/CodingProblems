@@ -25,7 +25,7 @@ public class Main {
             closest = tree.value;
         }
 
-        if (target < tree.value) {
+        if (target < tree.value && tree.left != null) {
             return findClosestValueInBstHelperRecursive(tree.left, target, closest);
         } else if (target > tree.value && tree.right != null) {
             return findClosestValueInBstHelperRecursive(tree.right, target, closest);
