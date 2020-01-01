@@ -26,9 +26,9 @@ public class Main {
         int sum = 0;
         for (Object ob : array) {
             if (ob instanceof ArrayList) {
-                sum += (productSumHelper((ArrayList)ob, multiplier + 1));
+                sum += productSumHelper((ArrayList) ob, multiplier + 1);
             } else {
-                sum = sum + (Integer) ob;
+                sum += (int) ob;
             }
         }
         return sum * multiplier;
